@@ -70,7 +70,7 @@ APP 测试请移步：[移动测试](https://github.com/Kujiale-Mobile/KoolTest/
 
 ## 开源说明
 
-本开源库为 KoolTest 的运行时部分，由 java 代码编写。Clone 本库后，可以使用 任何顺手的 Java IDE 进行修改调试。然后可以使用 `mvn package` 进行打包，得到的 jar 包包含了所有依赖，可以直接使用。 以下为该 jar 包的所有参数。
+本开源库为 KoolTest 的运行时部分，由 java 代码编写。Clone 本库后，可以使用 IDEA 或其他熟悉的 Java IDE 进行修改调试。打包可以执行 `mvn package`，得到的 jar 包含了所有依赖，可以直接使用。 以下为该 jar 包的所有参数。
 
 ```
 java -jar KoolTest.jar . // 其中 . 表示当前目录，该命令会执行在当前目录下的所有 .feature 文件
