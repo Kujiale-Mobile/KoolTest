@@ -63,7 +63,10 @@ Scenario: 酷家乐网页登录测试-登录错误
 
 ***OK，以上就是所有你需要掌握的啦～，恭喜！*** 接下来你可以学习下 KoolTest 的基础词汇啦。[点击前往学习](https://github.com/Kujiale-Mobile/KoolTest/wiki/%E5%9F%BA%E7%A1%80%E8%AF%8D%E6%B1%87)
 
+APP 测试请移步：[移动测试](https://github.com/Kujiale-Mobile/KoolTest/wiki/%E7%A7%BB%E5%8A%A8%E6%B5%8B%E8%AF%95)
 
+## 元素定位
+[元素定位](https://github.com/Kujiale-Mobile/KoolTest/wiki/%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D)
 
 ## 开源说明
 
