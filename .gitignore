@@ -1,0 +1,12 @@
+.idea
+/target
+nohup.out
+*.iml
+/.settings
+.classpath
+.project
+.vscode
+.DS_Store
+chromedriver
+config
+scripts

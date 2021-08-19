@@ -1,0 +1,28 @@
+/*
+  Copyright [2021] [Manycore Tech Inc.]
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ */
+package com.qunhe.avocado.lib.constant;
+
+/**
+ * 预制的 XPATH
+ * @author CPPAlien
+ */
+public class XPath {
+    public static final String WEB_ELEMENT_EQUAL_NAME = "//*[text()='%s'] | //input[@placeholder='%s'] | //input[@value='%s']";
+    public static final String WEB_ELEMENT_CONTAIN_NAME = "//*[contains(text(), '%s')] | //input[contains(@placeholder, '%s')] | //input[contains(@value, '%s')]";
+    public static final String WEB_ELEMENT_CHECK_ONE = "//*[text()='%s']/..//input";
+    public static final String WEB_ELEMENT_CHECK_TWO = " //*[text()='%s']/../..//input";
+    public static final String WEB_ELEMENT_CHECK_THREE = "//*[text()='%s']/../../..//input";
+}
