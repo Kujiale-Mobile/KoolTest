@@ -123,9 +123,9 @@ public class KoolSteps {
         uiStep.input(optional, content);
     }
 
-    @Given("^upload\\s+\"([^\"]*)\"\\s*$")
-    public void upload(String path) {
-        uiStep.upload(path);
+    @Given("^upload\\s+\"([^\"]*)\"(?:/(\\d+))?\\s*$")
+    public void upload(String path, Integer index) {
+        uiStep.upload(path, index);
     }
 
     @Given("^(\\?)?(?:tap|click)\\s+\"([^\"]+)\"(?:/(-?\\w+))?$")

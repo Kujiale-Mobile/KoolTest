@@ -330,7 +330,7 @@ public class UiStep {
         }
     }
 
-    public void upload(String path) {
+    public void upload(String path, Integer index) {
         path = Avocado.get().replaceVariables(path);
         long startTime = System.currentTimeMillis();
         List<WebElement> elements;
@@ -365,7 +365,13 @@ public class UiStep {
         if (allPath.toString().length() == 0) {
             Assert.fail("Cannot find file");
         }
-        elements.get(0).sendKeys(allPath.toString());
+        int elementIndex = 0;
+        if (index != null) {
+            elementIndex = index;
+        }
+        WebElement inputElement = elements.get(elementIndex);
+        DriverManager.get().baseDriver().executeScript("arguments[0].value = null;", inputElement);
+        inputElement.sendKeys(allPath.toString());
     }
 
     public void input(String optional, String content) {
